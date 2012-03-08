@@ -235,9 +235,6 @@ function uploadcsv_validate(Pieform $form, $values) {
     }
 
     $mandatoryfields = array_merge($mandatoryfields, array_keys(ArtefactTypeProfile::get_mandatory_fields()));
-    // if ($lockedprofilefields = get_column('institution_locked_profile_field', 'profilefield', 'name', $institution)) {
-    //     $mandatoryfields = array_merge($mandatoryfields, $lockedprofilefields);
-    // }
 
     $csvusers->set('mandatoryfields', $mandatoryfields);
     $csvdata = $csvusers->get_data();
