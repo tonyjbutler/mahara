@@ -446,7 +446,7 @@ class AuthXmlrpc extends Auth {
     private function import_user_settings($user, $remoteuser) {
         $imported = array();
 
-        // City
+        // Town/City
         if (!empty($remoteuser->city)) {
             if (get_profile_field($user->id, 'town') != $remoteuser->city) {
                 set_profile_field($user->id, 'town', $remoteuser->city);
@@ -480,6 +480,77 @@ class AuthXmlrpc extends Auth {
                 set_profile_field($user->id, 'introduction', $remoteuser->description);
             }
             $imported[] = 'introduction';
+        }
+
+        // Student ID
+        if (!empty($remoteuser->idnumber)) {
+            if ($user->studentid != $remoteuser->idnumber) {
+                $user->studentid = $remoteuser->idnumber;
+                set_profile_field($user->id, 'studentid', $user->studentid);
+            }
+        }
+
+        // Official Website
+        if (isset($remoteuser->url)) {
+            if (get_profile_field($user->id, 'officialwebsite') != $remoteuser->url) {
+                set_profile_field($user->id, 'officialwebsite', $remoteuser->url);
+            }
+        }
+
+        // Address
+        if (isset($remoteuser->address)) {
+            if (get_profile_field($user->id, 'address') != $remoteuser->address) {
+                set_profile_field($user->id, 'address', $remoteuser->address);
+            }
+        }
+
+        // Home Phone
+        if (isset($remoteuser->phone1)) {
+            if (get_profile_field($user->id, 'homenumber') != $remoteuser->phone1) {
+                set_profile_field($user->id, 'homenumber', $remoteuser->phone1);
+            }
+        }
+
+        // Mobile Phone
+        if (isset($remoteuser->phone2)) {
+            if (get_profile_field($user->id, 'mobilenumber') != $remoteuser->phone2) {
+                set_profile_field($user->id, 'mobilenumber', $remoteuser->phone2);
+            }
+        }
+
+        // ICQ Number
+        if (isset($remoteuser->icq)) {
+            if (get_profile_field($user->id, 'icqnumber') != $remoteuser->icq) {
+                set_profile_field($user->id, 'icqnumber', $remoteuser->icq);
+            }
+        }
+
+        // MSN Chat
+        if (isset($remoteuser->msn)) {
+            if (get_profile_field($user->id, 'msnnumber') != $remoteuser->msn) {
+                set_profile_field($user->id, 'msnnumber', $remoteuser->msn);
+            }
+        }
+
+        // AIM Screen Name
+        if (isset($remoteuser->aim)) {
+            if (get_profile_field($user->id, 'aimscreenname') != $remoteuser->aim) {
+                set_profile_field($user->id, 'aimscreenname', $remoteuser->aim);
+            }
+        }
+
+        // Yahoo Chat
+        if (isset($remoteuser->yahoo)) {
+            if (get_profile_field($user->id, 'yahoochat') != $remoteuser->yahoo) {
+                set_profile_field($user->id, 'yahoochat', $remoteuser->yahoo);
+            }
+        }
+
+        // Skype Username
+        if (isset($remoteuser->skype)) {
+            if (get_profile_field($user->id, 'skypeusername') != $remoteuser->skype) {
+                set_profile_field($user->id, 'skypeusername', $remoteuser->skype);
+            }
         }
 
         // HTML Editor setting

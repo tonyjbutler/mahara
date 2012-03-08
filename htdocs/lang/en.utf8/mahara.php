@@ -317,8 +317,8 @@ $string['passwordsaved'] = 'Your new password has been saved';
 $string['passwordsdonotmatch'] = 'The passwords do not match';
 $string['passwordtooeasy'] = 'Your password is too easy! Please choose a harder password';
 $string['register'] = 'Register';
-$string['sessiontimedout'] = 'Your session has timed out, please enter your login details to continue';
-$string['sessiontimedoutpublic'] = 'Your session has timed out. You may <a href="%s">log in</a> to continue browsing';
+$string['sessiontimedout'] = 'Your session has timed out, please log in again to continue';
+$string['sessiontimedoutpublic'] = 'Your session has timed out. You may <a href="' . str_replace('mahara', 'moodle', get_config('wwwroot')) . 'auth/mnet/jump.php?hostid=4">log in</a> to continue browsing';
 $string['sessiontimedoutreload'] = 'Your session has timed out. Reload the page to log in again';
 $string['username'] = 'Username';
 $string['preferredname'] = 'Display Name';
@@ -328,7 +328,7 @@ $string['youaremasqueradingas'] = 'You are masquerading as %s.';
 $string['yournewpassword'] = 'Your new password. Passwords must be at least six characters long and contain at least one digit and two letters';
 $string['yournewpasswordagain'] = 'Your new password again';
 $string['invalidsesskey'] = 'Invalid session key';
-$string['cannotremovedefaultemail'] = 'You cannot remove your primary email address';
+$string['cannotremovedefaultemail'] = 'You cannot remove your primary email address. To update it please edit the email address in your Moodle profile. It will then be updated automatically in Mahara the next time you log in.';
 $string['emailtoolong'] = 'E-mail addresses cannot be longer that 255 characters';
 $string['mustspecifyoldpassword'] = 'You must specify your current password';
 $string['Site'] = 'Site';
@@ -903,7 +903,7 @@ $string['profiledescription'] = 'Your profile page is what others see when they 
 
 // Dashboard views
 $string['mydashboard'] = 'My Dashboard';
-$string['editdashboard'] = 'Edit';
+$string['editdashboard'] = 'Edit Dashboard';
 $string['usersdashboard'] = "%s's Dashboard";
 $string['dashboarddescription'] = 'Your dashboard page is what you see on the homepage when you first log in. Only you have access to it';
 $string['topicsimfollowing'] = "Topics I'm Following";
@@ -922,7 +922,7 @@ $string['createcollect'] = 'Create and Collect';
 $string['createcollectsubtitle'] = 'Develop your portfolio';
 $string['updateyourprofile'] = 'Update your <a href="%s">Profile</a>';
 $string['uploadyourfiles'] = 'Upload your <a href="%s">Files</a>';
-$string['createyourresume'] = 'Create your <a href="%s">Resume</a>';
+$string['createyourresume'] = 'Create your <a href="%s">CV</a>';
 $string['publishablog'] = 'Publish a <a href="%s">Journal</a>';
 $string['Organise'] = 'Organise';
 $string['organisesubtitle'] = 'Showcase your portfolio';

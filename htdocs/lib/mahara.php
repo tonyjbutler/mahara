@@ -1621,6 +1621,11 @@ function can_view_view($view_id, $user_id=null) {
     require_once(get_config('libroot') . 'view.php');
     $view = new View($view_id);
 
+    // check admin
+    if (get_field('usr', 'admin', 'id', $user_id)) {
+        return true;
+    }
+
     if ($user_id && $user->can_edit_view($view)) {
         return true;
     }

@@ -27,7 +27,7 @@
 
 defined('INTERNAL') || die();
 
-$string['pluginname'] = 'Résumé';
+$string['pluginname'] = 'CV';
 
 // Tabs
 $string['introduction'] = 'Introduction';
@@ -51,8 +51,8 @@ $string['female'] = 'Female';
 $string['male'] = 'Male';
 $string['gender'] = 'Gender';
 $string['maritalstatus'] = 'Marital Status';
-$string['resumesaved'] = 'Résumé saved';
-$string['resumesavefailed'] = 'Failed to update your résumé';
+$string['resumesaved'] = 'CV saved';
+$string['resumesavefailed'] = 'Failed to update your CV';
 $string['educationhistory'] = 'Education History';
 $string['employmenthistory'] = 'Employment History';
 $string['certification'] = 'Certifications, Accreditations, and Awards';
@@ -88,11 +88,11 @@ $string['personalskill'] = 'Personal Skills';
 $string['academicskill'] = 'Academic Skills';
 $string['workskill'] = 'Work Skills';
 $string['goalandskillsaved'] = 'Saved successfully';
-$string['resume'] = 'Résumé';
+$string['resume'] = 'CV';
 $string['current'] = 'Current';
 $string['moveup'] = 'Move Up';
 $string['movedown'] = 'Move Down';
-$string['viewyourresume'] = 'View your Résumé';
-$string['resumeofuser'] = 'Résumé of %s';
+$string['viewyourresume'] = 'View your CV';
+$string['resumeofuser'] = 'CV of %s';
 $string['employeraddress'] = 'Employer Address';
 $string['institutionaddress'] = 'Institution Address';

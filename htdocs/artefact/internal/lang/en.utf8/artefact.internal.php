@@ -34,8 +34,8 @@ $string['profile'] = 'Profile';
 $string['mandatory'] = 'Mandatory';
 $string['public'] = 'Public';
 
-$string['aboutdescription'] = 'Enter your real first and last name here. If you want to show a different name to people in the system, put that name in as your display name.';
-$string['infoisprivate'] = 'This information is private until you include it in a page that is shared with others.';
+$string['aboutdescription'] = 'Your real first and last name should be entered here already. If you want to show a different name to people in the system, put that name in as your display name.<br /><br />Most of these details are updated automatically from your Moodle profile and cannot be edited here. If you need to update any of these locked fields please edit them in your <a href="' . str_replace('http', 'https', str_replace('mahara', 'moodle', get_config('wwwroot'))) . 'user/editmahara.php" title="Go to Moodle profile">Moodle profile</a>. They will be updated in Mahara automatically when you return.';
+$string['infoisprivate'] = 'This information is private until you include it in a page that is shared with others.<br /><br />Most of these details are updated automatically from your Moodle profile and cannot be edited here. If you need to update any of these locked fields please edit them in your <a href="' . str_replace('http', 'https', str_replace('mahara', 'moodle', get_config('wwwroot'))) . 'user/editmahara.php" title="Go to Moodle profile">Moodle profile</a>. They will be updated in Mahara automatically when you return.';
 $string['viewmyprofile'] = 'View my profile';
 
 // profile categories
@@ -54,12 +54,12 @@ $string['preferredname'] = 'Display Name';
 $string['introduction'] = 'Introduction';
 $string['email'] = 'Email Address';
 $string['maildisabled'] = 'Email Disabled';
-$string['officialwebsite'] = 'Official Website Address';
-$string['personalwebsite'] = 'Personal Website Address';
+$string['officialwebsite'] = 'Official Website';
+$string['personalwebsite'] = 'Personal Website';
 $string['blogaddress'] = 'Blog Address';
 $string['address'] = 'Postal Address';
-$string['town'] = 'Town';
-$string['city'] = 'City/Region';
+$string['town'] = 'Town/City';
+$string['city'] = 'County/Region';
 $string['country'] = 'Country';
 $string['homenumber'] = 'Home Phone';
 $string['businessnumber'] = 'Business Phone';

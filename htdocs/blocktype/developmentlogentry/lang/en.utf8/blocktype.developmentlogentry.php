@@ -1,8 +1,7 @@
 <?php
 /**
  * Mahara: Electronic portfolio, weblog, resume builder and social networking
- * Copyright (C) 2006-2009 Catalyst IT Ltd and others; see:
- *                         http://wiki.mahara.org/Contributors
+ * Copyright (C) 2006-2008 Catalyst IT Ltd (http://www.catalyst.net.nz)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,16 +17,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package    mahara
- * @subpackage blocktype-entireresume
+ * @subpackage blocktype-developmentlogentry
  * @author     Catalyst IT Ltd
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
- * @copyright  (C) 2006-2009 Catalyst IT Ltd http://catalyst.net.nz
+ * @copyright  (C) 2006-2008 Catalyst IT Ltd http://catalyst.net.nz
  *
  */
 
 defined('INTERNAL') || die();
 
-$string['title'] = 'Your Entire CV';
-$string['description'] = 'A quick way to show your whole CV';
+$string['title'] = 'Development Log Entry';
+$string['description'] = 'Add a new entry to your development log';
+$string['whydevelop'] = 'Why does this area need developing?';
+$string['whatlearnt'] = 'What have you learnt?';
+$string['whatachieved'] = 'What have you achieved?';
+$string['date'] = 'Date';
+$string['dateachieved'] = 'Date achieved (DD/MM/YYYY)';
+$string['evidence'] = 'Evidence';
 
-$string['History'] = 'History';
+?>
