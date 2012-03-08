@@ -33,6 +33,7 @@
         {/foreach}
         </div>
         <!-- there is a div id="performance-info" wrapping this -->{mahara_performance_info}
+		<div id="bfc-logo"><img src="{theme_url filename='images/bfc-logo.png'}" border="0" alt=""></div>
 		<div id="version">{mahara_version}</div>
 		<div class="cb"></div>
       </div><!-- footer -->

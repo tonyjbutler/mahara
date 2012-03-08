@@ -48,7 +48,7 @@ $form = array(
             'filter' => false,
             'lefttitle' => get_string('institutionmembers', 'admin'),
             'righttitle' => get_string('institutionstaff', 'admin'),
-            'searchparams' => array('limit' => 100, 'query' => '', 'member' => 1, 
+            'searchparams' => array('limit' => 99999, 'query' => '', 'member' => 1, 
                                     'institution' => $institution),
             'searchscript' => 'admin/users/userinstitutionsearch.json.php',
         ),

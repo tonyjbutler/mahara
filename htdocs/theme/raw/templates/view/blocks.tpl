@@ -51,7 +51,7 @@
     </form>
 
     <div id="view-wizard-controls" class="center">
-        <form action="{$WWWROOT}{if $groupid}{if $viewtype == 'grouphomepage'}{$groupurl}{else}view/groupviews.php{/if}{elseif $institution}view/institutionviews.php{else}view/index.php{/if}" method="GET">
+        <form action="{$WWWROOT}{if $groupid}{if $viewtype == 'grouphomepage'}{$groupurl}{else}view/groupviews.php{/if}{elseif $institution}view/institutionviews.php{elseif $viewtype == 'dashboard'}{else}view/index.php{/if}" method="GET">
         {if $groupid}
             {if $viewtype == 'grouphomepage'}
             <input type="hidden" name="id" value="{$groupid}">

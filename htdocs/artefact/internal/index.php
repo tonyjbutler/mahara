@@ -117,7 +117,9 @@ foreach ( $element_list as $element => $type ) {
     }
 
     if (isset($lockedfields[$element]) && !$USER->get('admin')) {
-        $items[$element]['disabled'] = true;
+        $items[$element]['readonly'] = true;
+        $items[$element]['class'] = 'readonly';
+        $items[$element]['onclick'] = 'window.location.href=\'' . str_replace('mahara', 'moodle', get_config('wwwroot')) . 'user/editmahara.php\'; alert(\'Please edit this field in your Moodle profile\');';
         if ($element == 'email') {
             $items[$element]['help'] = false;
         }

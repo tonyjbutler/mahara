@@ -1819,6 +1819,10 @@ ul.in-page-tabs li input.current-tab {
     padding: 0 5px;
     white-space: nowrap;
 }
+#bfc-logo {
+    float: right;
+    margin: 0.1em 1em;
+}
 #version {
     clear: right;
     float: right;

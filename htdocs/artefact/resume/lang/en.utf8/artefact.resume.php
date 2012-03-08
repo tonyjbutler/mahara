@@ -11,7 +11,7 @@
 
 defined('INTERNAL') || die();
 
-$string['pluginname'] = 'Résumé';
+$string['pluginname'] = 'CV';
 
 // Tabs
 $string['introduction'] = 'Introduction';
@@ -38,11 +38,11 @@ $string['male'] = 'Male';
 $string['gender'] = 'Gender';
 $string['gendernotspecified'] = '(Not specified)';
 $string['maritalstatus'] = 'Marital status';
-$string['resumesaved'] = 'Résumé saved';
-$string['resumesavefailed'] = 'Failed to update your résumé';
+$string['resumesaved'] = 'CV saved';
+$string['resumesavefailed'] = 'Failed to update your CV';
 $string['educationhistory'] = 'Education history';
 $string['employmenthistory'] = 'Employment history';
-$string['certification'] = 'Certifications, accreditations and awards';
+$string['certification'] = 'Certifications, accreditations, and awards';
 $string['book'] = 'Books and publications';
 $string['membership'] = 'Professional memberships';
 $string['startdate'] = 'Start date';
@@ -77,12 +77,12 @@ $string['personalskill'] = 'Personal skills';
 $string['academicskill'] = 'Academic skills';
 $string['workskill'] = 'Work skills';
 $string['goalandskillsaved'] = 'Saved successfully';
-$string['resume'] = 'Résumé';
+$string['resume'] = 'CV';
 $string['current'] = 'Current';
 $string['moveup'] = 'Move up';
 $string['movedown'] = 'Move down';
-$string['viewyourresume'] = 'View your résumé';
-$string['resumeofuser'] = 'Résumé of %s';
+$string['viewyourresume'] = 'View your CV';
+$string['resumeofuser'] = 'CV of %s';
 $string['employeraddress'] = 'Employer address';
 $string['institutionaddress'] = 'Institution address';
 $string['duplicatedresumefieldvalue'] = 'Duplicated value';

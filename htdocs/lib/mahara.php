@@ -1933,6 +1933,11 @@ function can_view_view($view, $user_id=null) {
         }
     }
 
+    // check admin
+    if (get_field('usr', 'admin', 'id', $user_id)) {
+        return true;
+    }
+
     if ($user_id && $user->can_edit_view($view)) {
         return true;
     }

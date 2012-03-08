@@ -20,8 +20,8 @@ $string['mandatoryfieldsdescription'] = 'Profile fields that must be filled in';
 $string['searchablefields'] = 'Searchable fields';
 $string['searchablefieldsdescription'] = 'Profile fields that can be searched on by others';
 
-$string['aboutdescription'] = 'Enter your real first and last name here. If you want to show a different name to people in the system, put that name in as your display name.';
-$string['infoisprivate'] = 'This information is private until you include it in a page that is shared with others.';
+$string['aboutdescription'] = 'Your real first and last name should be entered here already. If you want to show a different name to people in the system, put that name in as your display name.<br /><br />Most of these details are updated automatically from your Moodle profile and cannot be edited here. If you need to update any of these locked fields please edit them in your <a href="' . str_replace('http', 'https', str_replace('mahara', 'moodle', get_config('wwwroot'))) . 'user/editmahara.php" title="Go to Moodle profile">Moodle profile</a>. They will be updated in Mahara automatically when you return.';
+$string['infoisprivate'] = 'This information is private until you include it in a page that is shared with others.<br /><br />Most of these details are updated automatically from your Moodle profile and cannot be edited here. If you need to update any of these locked fields please edit them in your <a href="' . str_replace('http', 'https', str_replace('mahara', 'moodle', get_config('wwwroot'))) . 'user/editmahara.php" title="Go to Moodle profile">Moodle profile</a>. They will be updated in Mahara automatically when you return.';
 $string['viewmyprofile'] = 'View my profile';
 
 // profile categories
@@ -43,8 +43,8 @@ $string['officialwebsite'] = 'Official website address';
 $string['personalwebsite'] = 'Personal website address';
 $string['blogaddress'] = 'Blog address';
 $string['address'] = 'Postal address';
-$string['town'] = 'Town';
-$string['city'] = 'City/region';
+$string['town'] = 'Town/city';
+$string['city'] = 'County/region';
 $string['country'] = 'Country';
 $string['homenumber'] = 'Home phone';
 $string['businessnumber'] = 'Business phone';

@@ -4,6 +4,9 @@
     {include file="homeinfo.tpl" url=$url}
 {/if}
 {if $dashboardview}
+    <div class="fr" style="margin-bottom: 6px;">
+        <a class="btn" href="{$WWWROOT}view/blocks.php?id={$viewid}">{get_string('editdashboard')}</a>
+    </div>
     {include file="user/dashboard.tpl"}
 {/if}
 {include file="footer.tpl"}
