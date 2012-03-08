@@ -1206,6 +1206,8 @@ function auth_get_login_form_elements() {
  * @private
  */
 function get_login_form_js($form) {
+    $form = '<br /><a class="btn-login" href="' . get_config('wwwroot') . 'auth/mnet/jump.php?hostid=4">Click to log in</a>';
+    $form = str_replace('mahara', 'moodle', $form);
     $form = json_encode($form);
     $strcookiesnotenabled    = json_encode(get_string('cookiesnotenabled'));
     $cookiename = get_config('cookieprefix') . 'ctest';
