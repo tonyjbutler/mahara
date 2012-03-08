@@ -1191,6 +1191,12 @@ div.rel {
 	min-height: 0;  /* IE layout hack */
  * padding-top: 2px;
 }
+/* IE6 peekaboo hack */
+* html #container #main-column-container {
+    /* Hides from IE5-mac \*/
+    height: 1%;
+    /* End hide from IE5-mac */
+}
 .twocolumn div.rel {
 	margin-left: 50px;
 	font-size: .9167em;
@@ -1640,6 +1646,10 @@ a.tag {
 	color: #888;
 	padding: 0 5px;
 	white-space: nowrap;
+}
+#bfc-logo {
+    float: right;
+    margin: 0.1em 1em;
 }
 #version {
 	clear: right;
