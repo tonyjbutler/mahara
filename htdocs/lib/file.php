@@ -70,7 +70,7 @@ function serve_file($path, $filename, $mimetype, $options=array()) {
     $lastmodified = filemtime($path);
     $filesize     = filesize($path);
 
-    if ($mimetype == 'text/html' || $mimetype == 'text/xml') {
+    if ($mimetype == 'text/html' || $mimetype == 'text/xml' || $mimetype == 'application/xhtml+xml' || $mimetype == 'image/svg+xml') {
         if (isset($options['downloadurl']) && $filesize < 1024 * 1024) {
             display_cleaned_html(file_get_contents($path), $filename, $options);
             exit;
@@ -787,7 +787,7 @@ function copyr($source, $dest)
 
     // Make destination directory
     if (!is_dir($dest)) {
-        mkdir($dest);
+        mkdir($dest, get_config('directorypermissions'));
     }
 
     // Loop through the folder

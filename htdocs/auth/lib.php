@@ -1077,6 +1077,7 @@ function auth_get_login_form() {
 function get_login_form_js($form) {
     $form = '<br /><a class="btn-login" href="' . get_config('wwwroot') . 'auth/mnet/jump.php?hostid=4">Click to log in</a>';
     $form = str_replace('mahara', 'moodle', $form);
+    $form = json_encode($form);
     $strcookiesnotenabled    = json_encode(get_string('cookiesnotenabled'));
     $cookiename = get_config('cookieprefix') . 'ctest';
     return <<<EOF
@@ -1084,7 +1085,7 @@ function get_login_form_js($form) {
 var loginbox = $('loginform_container');
 document.cookie = "$cookiename=1";
 if (document.cookie) {
-    loginbox.innerHTML = '$form';
+    loginbox.innerHTML = $form;
     document.cookie = '$cookiename=1;expires=1/1/1990 00:00:00';
 }
 else {

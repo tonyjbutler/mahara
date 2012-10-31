@@ -46,6 +46,9 @@ header('Cache-Control: private, must-revalidate, pre-check=0, post-check=0, max-
 header('Expires: '. gmdate('D, d M Y H:i:s', 507686400) .' GMT');
 header('Pragma: no-cache');
 
+// Prevent clickjacking through iframe tags
+header('X-Frame-Options: SAMEORIGIN');
+
 // Set up error handling
 require('errors.php');
 
@@ -57,6 +60,10 @@ if (!is_readable($CFG->docroot . 'config.php')) {
 }
 
 init_performance_info();
+
+if (function_exists('libxml_disable_entity_loader')) {
+    libxml_disable_entity_loader(true);
+}
 
 require($CFG->docroot . 'config.php');
 $CFG = (object)array_merge((array)$cfg, (array)$CFG);
@@ -76,6 +83,7 @@ $CFG->xmldbdisablecommentchecking = true;
 if (empty($CFG->directorypermissions)) {
     $CFG->directorypermissions = 0700;
 }
+$CFG->filepermissions = $CFG->directorypermissions & 0666;
 
 // core libraries
 require('mahara.php');
