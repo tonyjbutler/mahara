@@ -1868,7 +1868,7 @@ a.tag {
 }
 #bfc-logo {
     float: right;
-    margin: 0.1em 1em;
+    margin: -5px 0;
 }
 #version {
 	clear: right;
