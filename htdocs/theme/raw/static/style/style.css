@@ -1821,7 +1821,7 @@ ul.in-page-tabs li input.current-tab {
 }
 #bfc-logo {
     float: right;
-    margin: 0.1em 1em;
+    margin: -5px 0;
 }
 #version {
     clear: right;
