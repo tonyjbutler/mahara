@@ -282,11 +282,13 @@ class PluginBlocktypeInternalmedia extends PluginBlocktype {
 
         $id = 'blocktype_internalmedia_flow_' . time() . $count;
         $url = self::get_download_link($artefact, $block);
+        $url = parse_url($url, PHP_URL_PATH) . '?' . parse_url($url, PHP_URL_QUERY);
         $escapedurl = str_replace('&', '%26', $url); // Flash needs these escaped
 
-        $baseurl = get_config('wwwroot') . 'artefact/file/blocktype/internalmedia/';
+        $baseurlpath = parse_url(get_config('wwwroot'), PHP_URL_PATH);
+        $baseurl = $baseurlpath . 'artefact/file/blocktype/internalmedia/';
 
-        $playerurl = $baseurl . 'flowplayer/flowplayer-3.2.7.swf';
+        $playerurl = $baseurl . 'mahara-flashplayer/mahara-flashplayer.swf';
         $autohide = 'true';
         $type = '';
         $audio = '';
@@ -314,7 +316,7 @@ class PluginBlocktypeInternalmedia extends PluginBlocktype {
                    },
                    plugins: {
 	                  controls: {
-                          url: "flowplayer.controls-3.2.5.swf",
+                          url: "mahara-flashplayer.controls.swf",
                           play:true,
                           volume:true,
                           mute:true,
@@ -451,7 +453,7 @@ class PluginBlocktypeInternalmedia extends PluginBlocktype {
             return '';
         }
         define('BLOCKTYPE_INTERNALMEDIA_JS_INCLUDED', true);
-        return '<script src="'.get_config('wwwroot').'artefact/file/blocktype/internalmedia/flowplayer/flowplayer-3.2.6.js"></script>
+        return '<script src="'.get_config('wwwroot').'artefact/file/blocktype/internalmedia/mahara-flashplayer/mahara-flashplayer-3.2.6.js"></script>
              <script src="' . get_config('wwwroot') . 'artefact/file/blocktype/internalmedia/swfobject.js" type="text/javascript"></script>';
     }
 
