@@ -1128,7 +1128,7 @@ class ElasticsearchPseudotype_all
                         array('term' => "Note", 'count' => 0, 'display' => "Note"),
                         array('term' => "Plan", 'count' => 0, 'display' => "Plan"),
                         array('term' => "Profile", 'count' => 0, 'display' => "Profile"),
-                        array('term' => "Resume", 'count' => 0, 'display' => "Résumé"),
+                        array('term' => "Resume", 'count' => 0, 'display' => "CV"),
                         array('term' => "Video", 'count' => 0, 'display' => "Video"),
                         array('term' => "Wallpost", 'count' => 0, 'display' => "Wall post"),
                         array('term' => "Collection", 'count' => 0, 'display' => "Collection"),
