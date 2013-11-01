@@ -64,8 +64,9 @@ class PluginBlocktypeDevelopmentlogentry extends SystemBlocktype {
         $text .= '<td>';
         $text .= (isset($configdata['achieved'])) ? $configdata['achieved'] : '';
         $text .= '</td>';
-        $text .= '<td>';
+        $text .= '<td><p>';
         $text .= (isset($configdata['date'])) ? $configdata['date'] : '';
+        $text .= '</p></td>';
         $text .= '<td>';
         $text .= (isset($configdata['evidence'])) ? $configdata['evidence'] : '';
         $text .= '</td>';
@@ -121,33 +122,33 @@ class PluginBlocktypeDevelopmentlogentry extends SystemBlocktype {
                 'title' => get_string('whydevelop', 'blocktype.developmentlogentry'),
                 'width' => '90%',
                 'height' => '150px',
-                'defaultvalue' => $configdata['develop'],
+                'defaultvalue' => isset($configdata['develop']) ? $configdata['develop'] : '',
             ),
             'learnt' => array(
                 'type' => 'tinywysiwyg',
                 'title' => get_string('whatlearnt', 'blocktype.developmentlogentry'),
                 'width' => '90%',
                 'height' => '150px',
-                'defaultvalue' => $configdata['learnt'],
+                'defaultvalue' => isset($configdata['learnt']) ? $configdata['learnt'] : '',
             ),
             'achieved' => array(
                 'type' => 'tinywysiwyg',
                 'title' => get_string('whatachieved', 'blocktype.developmentlogentry'),
                 'width' => '90%',
                 'height' => '150px',
-                'defaultvalue' => $configdata['achieved'],
+                'defaultvalue' => isset($configdata['achieved']) ? $configdata['achieved'] : '',
             ),
             'date' => array(
                 'type' => 'text',
                 'title' => get_string('dateachieved', 'blocktype.developmentlogentry'),
-                'defaultvalue' => $configdata['date'],
+                'defaultvalue' => isset($configdata['date']) ? $configdata['date'] : '',
             ),
             'evidence' => array(
                 'type' => 'tinywysiwyg',
                 'title' => get_string('evidence', 'blocktype.developmentlogentry'),
                 'width' => '90%',
                 'height' => '150px',
-                'defaultvalue' => $configdata['evidence'],
+                'defaultvalue' => isset($configdata['evidence']) ? $configdata['evidence'] : '',
             ),
         );
     }
