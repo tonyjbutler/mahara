@@ -26,7 +26,7 @@
 
 defined('INTERNAL') || die();
 
-$string['title'] = 'Development Log Entry';
+$string['title'] = 'Development log entry';
 $string['description'] = 'Add a new entry to your development log';
 $string['whydevelop'] = 'Why does this area need developing?';
 $string['whatlearnt'] = 'What have you learnt?';
