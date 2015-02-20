@@ -176,7 +176,7 @@ Before enabling this option, your server administrator must configure your web s
 $string['cleanurlsdisabled'] = 'Clean URLs are disabled.';
 $string['cleanurlsettings'] = 'Clean URL settings';
 $string['regenerateurls'] = 'Regenerate URLs';
-$string['regenerateurlsdescription'] = 'This will remove all clean URLs from the site and automatically regenerate them using usernames, group names and page titles.';
+$string['regenerateurlsdescription'] = 'This will remove all clean URLs from the site and automatically regenerate them using user names, group names and page titles.';
 $string['regenerateurlsconfirm'] = 'Are you sure you want to do this? It will replace all existing URLs chosen by users.';
 $string['generateduserurls'] = array(
     'Generated 1 profile URL',
@@ -361,7 +361,7 @@ $string['institutionexpirynotificationdescriptioninfo'] = 'A notification messag
 $string['language'] = 'Language';
 $string['none'] = 'None';
 $string['nousernames'] = 'Never display usernames';
-$string['nousernamesdescription'] = 'If checked, ordinary users will not be able to see the username of any other user.';
+$string['nousernamesdescription'] = 'If checked, ordinary users will not be able to see the username of any other user, nor will they be able to search for users by username. These restrictions do not apply to site staff or administrators. Additionally, Clean URLs for profile pages will be generated using preferred names (if provided) or real names, rather than usernames.';
 $string['onlineuserssideblockmaxusers'] = 'Online users limit';
 $string['onlineuserssideblockmaxusersdescription'] = 'The maximum number of users to display in the online users sidebar.';
 $string['country'] = 'Country';
@@ -389,8 +389,6 @@ $string['remoteavatarsdescription'] = 'If checked, the <a href="http://www.grava
 $string['searchplugin'] = 'Search plugin';
 $string['searchplugindescription'] = 'Search plugin to use';
 $string['searchconfigerror1'] = 'The configuration settings for the search plugin "%s" are incorrect. Please check the configuration settings under "Extensions" → "Plugin type: search". You may need to hit the search\'s \'reset\' button when done.';
-$string['searchusernames'] = 'Search usernames';
-$string['searchusernamesdescription'] = 'If checked, allow usernames to be searched on as part of "Search users". This setting has no effect if "Never display usernames" above is enforced. Site administrators and staff members are always able to search by username.';
 $string['searchuserspublic'] = 'Show users in public search';
 $string['searchuserspublicdescription'] = 'Allow users\' names to appear in public search results. This needs to have \'publicsearchallowed\' set to true and be using a search plugin that allows public search, e.g. Elasticsearch. Changing this setting will require search re-indexing.';
 $string['sessionlifetime'] = 'Session lifetime';
