@@ -1,0 +1,86 @@
+.header {
+    top: 0;
+    .logo img {
+        margin-top: 2px;
+    }
+    @media (min-width: $screen-sm-min) {
+        .container {
+            position: relative;
+            padding: 0;
+            .navbar-form {
+                position: absolute;
+                top: 55px;
+                right: 10px;
+                z-index: 1;
+                @media (min-width: $screen-md-min) {
+                    top: 78px;
+                }
+                @media (min-width: $screen-lg-min) {
+                    top: 83px;
+                }
+            }
+        }
+    }
+
+    .admin-title {
+        margin: 13px 10px 5px 0;
+        @media (max-width: $screen-sm-min) {
+            clear: both;
+            margin-top: 10px;
+        }
+        .admin-site {
+            color: #FFFFFF;
+            font-family: $font-family-serif;
+            font-size: 18px;
+            &:focus,
+            &:hover {
+                color: $brand-primary-light;
+            }
+        }
+    }
+
+    #lancs-banner {
+        background-image: url('../images/banner-bg.png');
+        background-repeat: repeat-y;
+        background-size: 100% 100%;
+        border-bottom: 1px solid #e2e2e2;
+        overflow: hidden;
+        .container {
+            padding: 0;
+            .lu-logos {
+                display: block;
+                margin: -230px auto 0;
+                width: 90%;
+                height: 300px;
+                background: url('../images/lu-logos.png');
+                background-position: 0 100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                @media (min-width: $screen-xs-min) {
+                    margin: -200px 0 0 15px;
+                }
+                @media (min-width: $screen-sm-min) {
+                    margin: -220px 0 0;
+                    width: 65%;
+                }
+                @media (min-width: $screen-md-min) {
+                    margin: -190px 0 0;
+                }
+                @media (min-width: $screen-lg-min) {
+                    margin: -180px 0 0;
+                }
+            }
+        }
+    }
+
+    + .container {
+        // if container is directly after header, then it will need a margin
+        margin-top: 70px;
+        @media (min-width: $screen-xs-min) {
+            margin-top: 0;
+        }
+        @media (min-width: $screen-sm-min) {
+             margin-top: 50px;
+        }
+    }
+}

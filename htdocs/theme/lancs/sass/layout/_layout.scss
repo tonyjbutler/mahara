@@ -1,0 +1,26 @@
+// overriding/additional styles for theme
+body {
+    background-color: #fff;
+    > .container {
+        background-color: #fff;
+        @media (min-width: $screen-sm-min) {
+            border: 1px solid $brand-primary-light;
+            border-bottom-left-radius: $border-radius-large;
+            border-bottom-right-radius: $border-radius-large;
+            border-top: none;
+        }
+    }
+    &.admin {
+        background-color: #555;
+        @media (max-width: $screen-sm-min) {
+            .container {
+                margin-top: 0;
+            }
+        }
+        .navbar-default {
+            &.dropdown-adminnav {
+                background: transparent;
+            }
+        }
+    }
+}
